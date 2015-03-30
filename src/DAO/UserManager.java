@@ -193,24 +193,7 @@ public void deleteUser(String username){
 		
 	}
 
-	public static void main(String args[]){
-		UserManager user = new UserManager();
-		List<User> ac = user.readAllUsers();
-		for (int i = 0; i < ac.size(); i++){
-			System.out.println(ac.get(i).getFirstName());
-			System.out.println(ac.get(i).getLastName());
-		}
-		User a  = user.readUser("abc");
-		System.out.println(a.getFirstName());
-		System.out.println(a.getLastName());
-		
-		user.createUser(a);
-		
-		user.updateUser("abc", a);
-		user.deleteUser("abc");
-		
-		
-	}
+	
 	
 
 }

@@ -187,24 +187,8 @@ public void deleteActor(int actorId){
 		
 	}
 
-	public static void main(String args[]){
-		ActorManager actor = new ActorManager();
-		List<Actor> ac = actor.readAllActors();
-		for (int i = 0; i < ac.size(); i++){
-			System.out.println(ac.get(i).getFirstName());
-			System.out.println(ac.get(i).getLastName());
-		}
-		Actor a  = actor.readActor(1);
-		System.out.println(a.getFirstName());
-		System.out.println(a.getLastName());
+	
 		
-		//actor.createActor(a);
-		
-		actor.updateActor(3, a);
-		actor.deleteActor(1);
-		
-		
-	}
 	
 
 }
